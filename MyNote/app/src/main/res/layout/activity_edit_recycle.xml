@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg07"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/show_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="标题"
+        android:textColor="#7B68EE"
+        android:textSize="30sp">
+
+    </TextView>
+    <TextView
+        android:id="@+id/show_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:textSize="15sp"/>
+    <TextView
+        android:id="@+id/show_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+
+        android:hint="内容"
+        android:gravity="left"
+        android:textColor="#5F9EA0"
+        android:textSize="20sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/show_clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:background="#E6E6FA"
+            android:text="永久删除"
+            android:textColor="#3F51B5"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/show_restore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:background="#D2B48C"
+            android:text="恢复记录"
+            android:textColor="#009688"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/show_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:background="#FFFACD"
+            android:text="返回"
+            android:textColor="#B0E0E6"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+</LinearLayout>

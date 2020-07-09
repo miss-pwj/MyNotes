@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+    <item
+        android:id="@+id/backup"
+        android:icon="@drawable/ic_backup"
+        android:title="数据备份"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/music"
+        android:icon="@drawable/ic_music"
+        android:title="背景音乐"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/map"
+        android:icon="@drawable/ic_map"
+        android:title="百度地图"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/restore"
+        android:icon="@drawable/ic_down"
+        android:title="数据恢复"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/baidu"
+        android:icon="@drawable/bg_meng"
+        android:title="百度主页"
+        app:showAsAction="never" />
+
+
+    <item
+        android:id="@+id/lookup"
+        android:icon="@drawable/ic_menu"
+        android:title="百度翻译"
+        app:showAsAction="never" />
+
+
+    <item
+        android:id="@+id/user"
+        android:icon="@drawable/ic_menu"
+        android:title="用户信息"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/delete"
+        android:icon="@drawable/ic_delete"
+        android:title="回收站"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/about"
+        android:icon="@drawable/ic_menu"
+        android:title="帮助"
+        app:showAsAction="never" />
+
+</menu>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg19"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/show_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="标题"
+        android:textColor="#483D8B"
+        android:textSize="25sp"
+        android:textStyle="bold">
+
+        <requestFocus />
+    </EditText>
+    <TextView
+        android:id="@+id/show_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:textSize="15sp"/>
+
+    <EditText
+        android:id="@+id/show_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="left"
+        android:hint="内容"
+        android:textColor="#008B8B"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/show_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:background="#FFB6C1"
+            android:textColor="#3F51B5"
+            android:text="保存"
+            android:textSize="20sp"/>
+        <Button
+            android:id="@+id/show_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:background="#FFC0CB"
+            android:textColor="#009688"
+            android:text="取消"
+            android:textSize="20sp"/>
+
+    </LinearLayout>
+</LinearLayout>

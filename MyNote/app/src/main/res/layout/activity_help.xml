@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg25">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_gravity="bottom"
+        android:singleLine="false"
+        android:textColor="#F8E5E2"
+        android:gravity="center"
+        android:text="帮助"
+        android:textSize="30sp"
+        android:textStyle="italic" />
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:paddingLeft="30dp"
+        android:singleLine="false"
+        android:text=" 这是心情笔录 希望能为你提供一些帮助！\n\n1.心情笔录可以记录日常的一些触动心情的想法，通过保存在手机上方便查看\n2.提供回收站功能可以避免误删\n3.可以备份到远程的服务器上面，方便数据的恢复\n4.此外还提供百度翻译、背景音乐、百度地图定位 访问百度主页的一些辅助功能"
+        android:textColor="#C8B6B4"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/copyright"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_gravity="bottom"
+        android:gravity="right"
+        android:singleLine="false"
+        android:text="心情笔录 version 1.0\nauthor @lcl"
+        android:textColor="#CF867E"
+        android:textSize="20sp"
+        android:textStyle="italic" />
+    <Button
+        android:id="@+id/BACK"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:background="#5E4949"
+        android:text="返回"
+        android:textColor="#FFEB3B"
+        android:textSize="18sp" />
+     </LinearLayout>

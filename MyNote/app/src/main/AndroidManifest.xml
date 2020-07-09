@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.lcl.mynote">
+
+
+    <uses-permission
+        android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <!-- 以下是必选权限 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- 这个权限用于访问GPS定位-->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- 用于访问wifi网络信息，wifi信息会用于进行网络定位-->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 获取运营商信息，用于支持提供运营商信息相关的接口-->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 这个权限用于获取wifi的获取权限，wifi信息会用来进行网络定位-->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <!-- 用于读取手机当前的状态-->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 写入扩展存储，向扩展卡写入数据，用于写入离线定位数据-->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 访问网络，网络定位需要上网-->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+
+        android:allowBackup="true"
+        android:icon="@drawable/app"
+        android:label="@string/app_name"
+
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".about.HelpActivity"></activity>
+        <activity android:name=".recycle.EditRecycleActivity" />
+
+
+        <!--            android:value="jBXPZjEWSgrg9UZh9XeDpUK4pwnFrfUt" -->
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="8AaK6sgzHbBkkXTVuC6rnhzTthcPZcXp"
+            />
+
+        <activity android:name=".map.BDPositionActivity" />
+        <activity android:name=".translate.TransActivity" />
+
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" />
+
+
+        <activity android:name=".baidupage.BaiduPage" />
+        <activity
+            android:name=".recycle.RecycleActivity"
+            android:launchMode="singleTask" />
+
+        <activity android:name=".user.LoginActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".notepad.MainActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask">
+
+        </activity>
+        <activity android:name=".notepad.AddNoteActivity" />
+        <activity android:name=".notepad.EditNoteActivity" />
+        <activity android:name=".music.MusicActivity" />
+
+        <service android:name=".music.MediaService" />
+
+    </application>
+</manifest>
